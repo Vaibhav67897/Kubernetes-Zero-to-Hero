@@ -95,11 +95,14 @@ kops validate cluster demok8scluster.k8s.local
 
 
 ```
+###############use this for the export into s3-bucket ####################
 
+export KOPS_STATE_STORE=s3://kops-abhay-storage
 
 
 ############### use rhis command for delete cluster#####################
 
 kops delete cluster --name demok8scluster.k8s.local --yes
+
 
 
